@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	.animation{
+		width: 150px;
+		height: 150px;
+		border-radius: 10px;
+		background: aqua;
+		margin-top: 200px;
+		color: white;
+		animation: 1.5s both;
+		animation-name: scaleup;
+		animation-duration: 0.4s;
+		margin-left: 40%;
+	}
+
+@keyframes scaleup{
+	0%{
+		width: 150px;
+		height: 150px;
+		transform: scale(0.5);
+	}
+	100%{
+		width: 150px;
+		height: 150px;
+		transform: scale(1);
+	}
+}
+
+.animation2{
+		width: 150px;
+		height: 150px;
+		border-radius: 10px;
+		background: green;
+		margin-top: 200px;
+		color: white;
+		animation: 1.5s both;
+		animation-name: scaleuptwo;
+		animation-duration: 2s;
+		margin-left: 40%;
+		transform-origin: 0% 100%;
+
+		
+		
+	}
+	@keyframes scaleuptwo{
+		0%{
+			transform: scale(1,0);		
+
+		}
+		50%{
+			transform: scale(1,1);: 
+		}
+	}
+
+	</style>
+</head>
+<body>
+	<div class="animation"></div>
+	<div class="animation2"></div>
+</body>     
+</html>    
